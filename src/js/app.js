@@ -1,5 +1,21 @@
-(function() {
-	
+$(document).ready( function() {
+	//клик на кнопку меню - показывает\прячет меню
+
+	$('.menu').on('click', function(){
+		$('.header__menu').toggleClass('is_active');
+	});
+}); // ready
+
+
+
+
+
+
+
+
+
+$(function() {
+
 	$(document).click(function(){
 		$(".js-time").removeClass("is-visible");
 		$(".js-choose-time").removeClass("is-active");
@@ -37,7 +53,7 @@
 	});
 
 
-	
+
 	$(".js-tabs a").on("click", function(){
 		var index = $(this).parent().index();
 		var group = $(this).parents(".js-tabs").attr("data-group");
@@ -61,10 +77,10 @@
 		player.addEventListener('canplay',videoStart,false);
 		player.addEventListener('ended',videoEnd,false);
 	}
-	
-	
+
+
 	function videoStart() {
-		
+
     	var time = player.duration*1000;
     	// loader
 		var circle = new ProgressBar.Circle('.js-circle-'+count2, {
@@ -90,7 +106,7 @@
 
     function videoEnd(e) {
 	    if(!e) {
-	        e = window.event; 
+	        e = window.event;
 	    }
 	    count++;
 	    if (count > end) {
@@ -134,7 +150,7 @@
 
 	$(".js-hide-parent").on("click", function(){
 		$(this).parents(".js-parent-hidden").fadeOut(300);
-	});	
+	});
 
 	$(".js-target-link a").on("click", function(){
 		var hash = $(this).attr("href");
@@ -152,8 +168,8 @@
 			  scrollTop: $("[data-target="+hash+"]").offset().top
 		  }, 800);
 		}
-	   
-		
+
+
 	}
    loadNav();
 
@@ -200,7 +216,7 @@
    // 		else {
    // 			$(this).parent().find(".js-placeholder").show();
    // 		}
-   		
+
    // });
 
    $(".js-input").on("change", function(){
@@ -210,7 +226,7 @@
    		else {
    			$(this).parent().find(".js-placeholder").show();
    		}
-   		
+
    });
 
 	$(".js-input").each(function(){
@@ -220,7 +236,7 @@
    		else {
    			$(this).parent().find(".js-placeholder").show();
    		}
-   		
+
    });
 
 	$(".js-input").focus(function(){
@@ -310,7 +326,7 @@
 			}
 		});
 	}
-		
+
 	validate();
 
 
@@ -369,7 +385,7 @@
 			$(this).parent().find(".js-time").addClass("is-visible");
 			$(this).addClass("is-active");
 		}
-		
+
 		event.stopPropagation();
 		return false;
 	});
@@ -393,10 +409,10 @@
 	 //  		$(".js-tips-group-4 .js-tip").removeClass("is-visible");
 	 //     	$(".js-tips-group-4 .js-tip").first().addClass("is-visible");
 	 //  	}
-	
+
 	}, 7000)
 
-	function number() { 
+	function number() {
         var number = $(".js-number");
         number.each(function(){
             var max_number = +($(this).attr("data-max-number"));
@@ -425,9 +441,9 @@
                 }
                 if (val == 0) {
                 	$(this).addClass("is-disabled");
-                } 
+                }
                 else {
-                	
+
                     return false;
                 }
             });

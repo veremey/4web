@@ -34,11 +34,11 @@
 //     @each $s in a,b,c
 // 	    	#{$s}
 //				display: none
-// ## fonts 
+// ## fonts
 // Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
+// +font(book, cytiapro-black-webfont)
 // =book
-// 	font-family: "book", Arial, sans-serif 
+// 	font-family: "book", Arial, sans-serif
 // insert pics into css
 // div
 // 	+pic("blabla.png")
@@ -47,16 +47,194 @@
 // p
 // 	+jpg(bla)
 
-body
-	font-family: Arial, sans-serif 
-	font-size: 1.2rem
-	line-height: 1.4
-	color: #000 
-	min-width: 1100px
++font(helveticaneuecyr-light-webfont, helveticaneuecyr-light-webfont)
+=hl
+	font-family: 'helveticaneuecyr-light-webfont', Arial, sans-serif
+	font-weight: 100
 
-.icon-marker
++font(helveticaneuecyr-thin-webfont, helveticaneuecyr-thin-webfont)
+=ht
+	font-family: 'helveticaneuecyr-thin-webfont', Arial, sans-serif
+	font-weight: 300
+
++font(helveticaneuecyr-ultralight-webfont, helveticaneuecyr-ultralight-webfont)
+=hu
+	font-family: 'helveticaneuecyr-ultralight-webfont', Arial, sans-serif
+	font-weight: 100
+
+
+=osl
+	font-family: 'OpenSans', Arial, sans-serif
+	font-weight: 300
+=osn
+	font-family: 'OpenSans', Arial, sans-serif
+	font-weight: 400
+=osb
+	font-family: 'OpenSans', Arial, sans-serif
+	font-weight: 700
+=ose
+	font-family: 'OpenSans', Arial, sans-serif
+	font-weight: 800
+
+a
+	text-decoration: none
+	&:hover
+		color: #6CC9FF
+	&:active
+		color: #67A9CF
+nav
 	display: inline-block
-	+s($marker)
-.icon-smile-svg
+	vertical-align: top
+
+
+$n: transparent
+$black: #181818
+
+.container
+	position: relative
+	width: 1200px
+	margin: 0 auto
+	+clr
+	+r(768)
+		width: 684px
+	+r(640)
+		width: 575px
+	+r(320)
+		width: 288px
+
+body
+	font-family: Arial, sans-serif
+	font-size: 16px
+	line-height: 1.75
+	color: $black
+	min-width: 300px
+
+// .icon-marker
+// 	display: inline-block
+// 	+s($marker)
+// .icon-smile-svg
+// 	display: inline-block
+// 	+svg(smile,100,100)
+
+// #### HEADER ###
+
+.header
+	background-color: #F2F7FF
+	+clr
+	nav
+		+r(768)
+			position: absolute
+			top: 30px
+			right: 0
+			width: 100%
+
+.logo
 	display: inline-block
-	+svg(smile,100,100)
+	width: 110px
+	height: 50px
+	margin-top: 15px
+.menu
+	display: none
+	+r(768)
+		display: block
+		float: right
+		width: 26px
+		height: 17px
+		background-image: url("../img/icons/menu.png")
+		+r(640)
+
+			&.is_active
+				background-image: url("../img/icons/menu2.png")
+.header__menu
+	margin-left: 195px
+	font-size: 0
+	display: inline-block
+	vertical-align: top
+	+r(768)
+		// display: none
+		position: absolute
+		// top: 50px
+		top: -1000px
+		left: -21px
+		right: 0
+		margin: 0
+		z-index: 200
+		+tr(.5s)
+		transition-timing-function: linear
+		&.is_active
+			top: 50px
+	li
+		display: inline-block
+		margin-right: 35px
+		+tr(.3s)
+		+r(768)
+			display: block
+			width: 100vw
+			height: 58px//115px//
+			padding: 0 35px
+			margin: 0
+			background-color: #00cbff
+			border-bottom: 2px solid #52dcff
+		+r(640)
+			padding: 0 15px
+		&:last-child
+			margin-right: 0
+		&:hover
+			a
+				color: #6CC9FF
+			+r(768)
+				width: 100vw
+				padding: 0 50px
+				background-color: #00c2f4
+				transform: translate(-25px, 0)
+				a
+					color: #fff
+			+r(640)
+				padding: 0 30px
+				transform: translate(-15px, 0)
+			+r(320)
+				transform: translate(0, 0)
+				padding: 0 15px
+		&:active
+			a
+				color: #67A9CF
+		a
+			font-size: 14px
+			color: #181818
+			text-transform: uppercase
+			line-height: 80px
+			+osb
+			+r(768)
+				display: block
+				line-height: 58px//115px//
+				color: #fff
+.header__tel
+	display: none
+	+r(640) //retina
+		position: relative
+		display: inline-block
+		float: right
+		margin-right: 40px
+		width: 80px
+		height: 80px
+		background-color: $n
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		&:active
+			background-color: #4bcd82
+			i
+				background-image: url("../img/icons/tel1a.png")
+		i
+			display: block
+			+vcenter
+			width: 38px
+			height: 38px
+			background-image: url("../img/icons/tel1.png")
+.header__contact
+	float: right
+	line-height: 80px
+	color: $black
+	+r(768)
+		+vcenter
+	+r(640)
+		display: none
