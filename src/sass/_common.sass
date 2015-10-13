@@ -62,7 +62,6 @@
 	font-family: 'helveticaneuecyr-ultralight-webfont', Arial, sans-serif
 	font-weight: 100
 
-
 =osl
 	font-family: 'OpenSans', Arial, sans-serif
 	font-weight: 300
@@ -75,6 +74,8 @@
 =ose
 	font-family: 'OpenSans', Arial, sans-serif
 	font-weight: 800
+
+
 
 a
 	text-decoration: none
@@ -89,6 +90,10 @@ nav
 
 $n: transparent
 $black: #181818
+
+.clear
+	clear: both
+	height: 0
 
 .container
 	position: relative
@@ -139,10 +144,10 @@ body
 		display: block
 		float: right
 		width: 26px
+		background-color: $n
 		height: 17px
 		background-image: url("../img/icons/menu.png")
 		+r(640)
-
 			&.is_active
 				background-image: url("../img/icons/menu2.png")
 .header__menu
@@ -184,6 +189,7 @@ body
 				color: #6CC9FF
 			+r(768)
 				width: 100vw
+				color: #FFF
 				padding: 0 50px
 				background-color: #00c2f4
 				transform: translate(-25px, 0)
@@ -203,6 +209,7 @@ body
 			color: #181818
 			text-transform: uppercase
 			line-height: 80px
+			+tr(.2s)
 			+osb
 			+r(768)
 				display: block
@@ -234,7 +241,123 @@ body
 	float: right
 	line-height: 80px
 	color: $black
+	+tr(.2s)
 	+r(768)
 		+vcenter
 	+r(640)
 		display: none
+
+
+
+
+
+// ---------
+// ####### FOOTER ####
+// ---------
+
+
+
+
+
+.footer
+	padding: 85px 0 60px
+	border-top: 1px solid #EDEEEF
+	+box
+	+clr
+	+r(768)
+		padding: 55px 0 70px
+	.box_300
+		float: left
+	.title__small
+		vertical-align: top
+		margin: 0 75px 20px 0
+	.menu__footer
+		@extend .menu
+		+r(768)
+			display: none
+		+r(640)
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+.box_300
+	display: inline-block
+	width: 300px
+	vertical-align: top
+	+clr
+.copy
+	font-size: 14px
+	line-height: 1
+	margin-bottom: 25px
+	color: #1e1e1e
+	+hl
+.footer__tel
+	display: block
+	font-size: 14px
+	font-weight: bold
+	color: #1e1e1e
+	line-height: 26px
+.title__small
+	font-size: 12px
+	text-transform: uppercase
+	font-weight: bold
+	letter-spacing: 1px
+	a
+		color: #1e1e1e
+.footer__list
+	font-size: 0
+	+r(768)
+		display: none
+	li
+	a
+		font-size: 14px
+		color: #1e1e1e
+		+hl
+.footer__item
+	float: left
+	margin: 0 75px 20px 0
+	vertical-align: top
+.soc
+	position: relative
+	display: inline-block
+	margin-top: 25px
+	color: #1e1e1e
+.vk
+	padding-left: 15px
+	margin-left: 30px
+	&:before
+		content: ""
+		position: absolute
+		left: -30px
+		width: 30px
+		height: 30px
+		background-image: url("../img/icons/vk.png")
+	&:hover
+		opacity: 0.7
+
+.hiden_640
+	+clr
+	+r(640)
+		display: none
+		&.is_active
+			display: block
+			position: absolute
+			bottom: 0
+			width: 100vw
+		// 	padding: 0 35px
+		// 	margin: 0
+		// 	background-color: #00cbff
+		// 	border-bottom: 2px solid #52dcff
+		// .box_300
+		// 	display: block
+		// 	margin: auto
+		// 	width: 100%!important
+		// 	.title__small
+		// 		margin: 0
+		// 		line-height: 40px
+		// .footer__item
+		// 	display: block
+		// 	float: none
+		// 	margin: 0
+		// 	height: 40px
+		// 	line-height: 40px
