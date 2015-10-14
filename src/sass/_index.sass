@@ -78,6 +78,8 @@
 	text-align: center
 	+box
 	+clr
+	+r(640)
+		min-height: 650px
 	&__name
 		position: relative
 		text-transform: uppercase
@@ -155,13 +157,24 @@
 	text-align: center
 	text-transform: uppercase
 	+clr
+	+r(768)
+		margin: 20px 0
+		padding: 0 20px
+	+r(640)
+		width: 100%
+		float: none
 	.pentagon
 		height: 143px
+		+r(768)
+			height: 120px
 	p
 		font-size: 14px
 		color: #262626
 		height: 120px
 		+osn
+		+r(768)
+			height: auto
+			margin-bottom: 10px
 		span
 			color: #B86FD3
 
@@ -173,6 +186,8 @@
 	padding: 65px 20px
 	border: 1px solid #d8dee5
 	text-align: center
+	+r(480)
+		padding: 40px 10px
 	h5
 		font-size: 14px
 		color: $black
@@ -192,6 +207,9 @@
 	font-size: 16px
 	margin-top: 40px
 	+hl
+	+r(480)
+		margin-top: 30px
+		padding: 35px 10px
 	&:before
 		content: ""
 		position: absolute
@@ -222,23 +240,41 @@
 	min-height: 550px
 	padding-top: 95px
 	text-align: center
+	margin-top: 60px
+	+r(640)
+		padding-top: 0px
+		margin-top: 30px
 	img
 		+vcenter
 		z-index: 1
+		+r(640)
+			height: 90%
 	&__wrap
 		position: relative
 		z-index: 5
+		+r(640)
+			top: 120px
 	.foreword
 		font-size: 18px
 		text-transform: uppercase
 		color: #B86FD3
 		+osn
+		+r(640)
+			font-size: 16px
+			margin-top: 20px
 	.case__name
 		margin-top: 90px
 		font-size: 16px
 		text-transform: none
 		color: $black
 		+hu
+		+r(640)
+			font-size: 16px
+		span
+			+r(640)
+				display: block
+				text-align: center
+				color: $blue
 
 .order
 	text-align: center
@@ -254,14 +290,30 @@
 			font-size: 14px
 	.btn
 		width: 192px
+		+r(640)
+			width: 100%
+			margin-top: 30px
+		+r(480)
+			font-size: 12px
+	label
+		color: #838C94
+		+r(640)
+			font-size: 20px
+		+r(480)
+			font-size: 12px
 .order__name
 	width: 245px
 	display: inline-block
 	text-align: left
+	+r(640)
+		width: 100%
 .order__tel
 	width: 155px
 	display: inline-block
 	text-align: left
+	+r(640)
+		width: 100%
+		margin-top: 12px
 
 
 

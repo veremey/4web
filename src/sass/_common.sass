@@ -97,6 +97,10 @@ $blue: #6cc9ff
 	clear: both
 	height: 0
 
+.out
+	+r(768)
+		overflow: hidden
+
 .container
 	position: relative
 	width: 1200px
@@ -220,10 +224,10 @@ body
 .header__tel
 	display: none
 	+r(640) //retina
-		position: relative
+		position: absolute
+		top: -5px
+		right: 40px
 		display: inline-block
-		float: right
-		margin-right: 40px
 		width: 80px
 		height: 80px
 		background-color: $n

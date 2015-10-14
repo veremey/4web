@@ -16,7 +16,7 @@
 	position: relative
 	overflow: hidden
 	display: block
-	margin: 0 0 100px 0
+	margin: 0
 	padding: 0
 	&:focus
 		outline: none
@@ -98,7 +98,7 @@
 .slick-next
 	right: 0
 	&:before
-		content: "→"
+		content: ""
 		display: inline-block
 		vertical-align: middle
 		font-size: 61px
@@ -136,6 +136,15 @@
 		border-radius: 50%
 		&:hover
 			box-shadow: none
+
+.big_slider
+	.slick-list
+		margin-bottom: 100px
+.case_slider
+	.slick-list
+		margin-bottom: 100px
+		+r(768)
+			margin-bottom: 0
 
 .case_slider
 	.slick-prev
@@ -179,6 +188,10 @@
 			width: 136px
 			height: 141px
 			// margin-top: -70px
+			+r(480)
+				background-image: url("../img/sl-prew.jpg")
+				width: 52px
+				height: 110px
 	.slick-next
 		top: 7px
 		right: -10px
@@ -189,7 +202,7 @@
 			background-color: #FFF
 			display: inline-block
 			vertical-align: middle
-			background-image: url("../img/com_r.jpg")
-			width: 136px
-			height: 141px
+			background-image: url("../img/sl-next.jpg")
+			width: 52px
+			height: 109px
 			// margin-top: -70px

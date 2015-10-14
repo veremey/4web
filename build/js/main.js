@@ -59,6 +59,14 @@ $(document).ready( function() {
 		autoplay: true,
 		autoplaySpeed: 1000000,
 		dots: false,
+		responsive: [
+			{
+				breakpoint: 640,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 	$(".comment__slider").slick({
@@ -67,6 +75,14 @@ $(document).ready( function() {
 		autoplay: true,
 		autoplaySpeed: 6000,
 		dots: false,
+		responsive: [
+			{
+				breakpoint: 640,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 
