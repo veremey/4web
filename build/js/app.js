@@ -4,8 +4,36 @@ $(document).ready( function() {
 	$('.menu').on('click', function(){
 		$('.header__menu').toggleClass('is_active');
 	});
+
+
+
 }); // ready
 
+	// carousel
+
+	$(".slick-slideshow").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 6000,
+		dots: true,
+	});
+
+	$(".case_slider").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 1000000,
+		dots: false,
+	});
+
+	$(".comment__slider").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 6000,
+		dots: false,
+	});
 
 
 

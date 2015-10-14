@@ -1,0 +1,68 @@
+.footer
+	.get_768
+		+r(768)
+			width: 135px
+			float: left
+			.box_300
+				width: 135px
+				height: 40px
+	.box_300
+		+r(768)
+			width: 265px
+
+
+.pentagon
+	position: relative
+	i
+		+vcenter
+
+// @each $s in icon_convers
+// 	#{$s}
+// 		display: inline-block
+// 		background-image: url("../img/icons/#{$s}.png")
+
+// ################### title
+
+
+.titlle__big
+	font-size: 84px
+	text-align: center
+	letter-spacing: .5px
+	+hu
+
+.foreword
+	text-align: center
+	font-size: 16px
+	color: #262626
+	+hl
+
+
+// ###################
+
+img
+	max-width: 100%
+	vertical-align: top
+a
+	text-decoration: none
+	&:hover
+		color: #6CC9FF
+	&:active
+		color: #67A9CF
+
+
+.btn
+	width: 152px
+	height: 44px
+	background-color: $n
+	text-align: center
+	text-transform: uppercase
+	color: $green
+	border: 1px solid $green
+	font-size: 12px
+	+osn
+	&:hover
+		background-color: $green
+		color: #FFF
+
+
+

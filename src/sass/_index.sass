@@ -1,0 +1,268 @@
+.create
+	margin: 20px 0
+.create__idea
+	margin: 0 auto 95px
+	text-align: center
+	p
+		position: relative
+		display: inline-block
+		margin-right: 50px
+		&:last-child
+			margin-right: 0
+.create__idea_start
+	&:before
+		content: ""
+		position: absolute
+		top: 9px
+		left: -20px
+		width: 9px
+		height: 9px
+		background-image: url("../img/icons/a1.png")
+	&:after
+		content: ""
+		position: absolute
+		top: 9px
+		right: -35px
+		width: 13px
+		height: 10px
+		background-image: url("../img/icons/a2.png")
+.create__idea_last
+	&:after
+		content: ""
+		position: absolute
+		top: 12px
+		right: -35px
+		width: 13px
+		height: 7px
+		background-image: url("../img/icons/a3.png")
+
+.slick_prise
+	position: absolute
+	top: 75%
+	left: 70%
+	transform: translate(-50%,-50%)
+	display: inline-block
+	width: 166px
+	height: 166px
+	background-image: url("../img/icons/price.png")
+	text-align: center
+	p
+		+vcenter
+		color: #fff
+		font-size: 18px
+		// +rotate(-10)
+		// transform-origin: 170% 300% 0
+		+hl
+		span
+			font-size: 36px
+			line-height: 1.1
+			+ose
+
+
+// ##############
+// ---------------
+// cases
+
+// ---------------
+// ##############
+
+.case_slider
+	margin: 50px 0 0
+	+clr
+.case
+	float: left
+	width: 598px
+	min-height: 750px
+	border: 1px solid #d8dee5
+	padding: 80px 50px 35px
+	text-align: center
+	+box
+	+clr
+	&__name
+		position: relative
+		text-transform: uppercase
+		font-size: 11px
+		color: #D8DEE5
+		text-align: center
+		margin: 30px 0 35px
+		letter-spacing: 2px
+		+osn
+		i
+			position: absolute
+			top: -25px
+			left: 50%
+			transform: translate(0, -50%)
+			width: 22px
+			margin-left: -11px
+			height: 22px
+	&__text
+		text-align: center
+		font-size: 18px
+		text-transform: uppercase
+		color: #262626
+		margin: 50px 0
+		+osn
+		span
+			text-transform: uppercase
+			color: #6CC9FF
+	.pentagon
+		img
+			display: inline-block
+.icon_pen
+	display: inline-block
+	background-image: url("../img/icons/c1.png")
+.icon_up
+	display: inline-block
+	background-image: url("../img/icons/c2.png")
+.icon_convers
+	width: 47px
+	height: 42px
+	display: inline-block
+	background-image: url("../img/icons/icon_convers.png")
+.icon_card
+	width: 40px
+	height: 40px
+	display: inline-block
+	background-image: url("../img/icons/icon_card.png")
+	margin-top: -15px
+.icon_doc
+	width: 39px
+	height: 44px
+	display: inline-block
+	background-image: url("../img/icons/icon_doc.png")
+	margin-top: -15px
+.icon_finger
+	width: 40px
+	height: 34px
+	display: inline-block
+	background-image: url("../img/icons/icon_finger.png")
+	margin-top: -25px
+
+.icon_diplom
+	width: 27px
+	height: 45px
+	display: inline-block
+	background-image: url("../img/icons/icon_diplom.png")
+	margin-top: -15px
+	margin-left: 5px
+
+.work
+	width: 300px
+	float: left
+	vertical-align: top
+	padding: 65px 20px
+	margin-bottom: 60px
+	text-align: center
+	text-transform: uppercase
+	+clr
+	.pentagon
+		height: 143px
+	p
+		font-size: 14px
+		color: #262626
+		height: 120px
+		+osn
+		span
+			color: #B86FD3
+
+.comment_slider
+	+clr
+.comment
+	float: left
+	width: 600px
+	padding: 65px 20px
+	border: 1px solid #d8dee5
+	text-align: center
+	h5
+		font-size: 14px
+		color: $black
+		text-transform: uppercase
+		margin: 20px 0 10px
+		+osb
+	img
+		display: inline-block !important
+.comment__company
+	font-size: 12px
+	text-transform: uppercase
+	color: $blue
+	+osb
+.comment__figure
+	position: relative
+	padding: 55px 20px
+	font-size: 16px
+	margin-top: 40px
+	+hl
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: -10px
+		background-image: url("../img/icons/fig.png")
+		width: 11px
+		height: 10px
+	&:after
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 50%
+		margin-left: -10px
+		background-image: url("../img/icons/figb.png")
+		width: 11px
+		height: 10px
+
+
+// ############
+// -------------
+// BANER
+//  ----------
+
+.banner
+	position: relative
+	min-height: 550px
+	padding-top: 95px
+	text-align: center
+	img
+		+vcenter
+		z-index: 1
+	&__wrap
+		position: relative
+		z-index: 5
+	.foreword
+		font-size: 18px
+		text-transform: uppercase
+		color: #B86FD3
+		+osn
+	.case__name
+		margin-top: 90px
+		font-size: 16px
+		text-transform: none
+		color: $black
+		+hu
+
+.order
+	text-align: center
+	margin-bottom: 90px
+	input
+		background-color: $n
+		border: 1px solid #CDD2D8
+		padding: 0 20px
+		width: 100%
+		height: 43px
+		+placeholder
+			color: $black
+			font-size: 14px
+	.btn
+		width: 192px
+.order__name
+	width: 245px
+	display: inline-block
+	text-align: left
+.order__tel
+	width: 155px
+	display: inline-block
+	text-align: left
+
+
+
+

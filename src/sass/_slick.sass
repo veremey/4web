@@ -16,7 +16,7 @@
 	position: relative
 	overflow: hidden
 	display: block
-	margin: 0
+	margin: 0 0 100px 0
 	padding: 0
 	&:focus
 		outline: none
@@ -28,7 +28,7 @@
 
 .slick-slider .slick-list,
 .slick-track,
-.slick-slide, 
+.slick-slide,
 .slick-slide img
 	-webkit-transform: translate3d(0, 0, 0)
 	-moz-transform: translate3d(0, 0, 0)
@@ -94,7 +94,7 @@
 		display: inline-block
 		vertical-align: middle
 		font-size: 61px
-		color: #fff 
+		color: #fff
 .slick-next
 	right: 0
 	&:before
@@ -102,33 +102,94 @@
 		display: inline-block
 		vertical-align: middle
 		font-size: 61px
-		color: #fff 
+		color: #fff
 .slick-dots
 	text-align: center
 	position: absolute
 	margin: 0
-	bottom: 0
+	bottom: -50px
 	left: 0
 	right: 0
 	li
 		position: relative
 		display: inline-block
-		padding: 0 3px 
+		padding: 0 3px
+		margin-right: 20px
+		&:last-child
+			margin-right: 0
 		&.slick-active
 			button
-				opacity: 0.3
+				background-color: transparent
 				box-shadow: none
 		&:before
-			display: none 
-				 
+			display: none
 	button
 		display: block
-		width: 6px
-		height: 6px
-		background: #fff
+		width: 11px
+		height: 11px
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		border: 1px solid #a8b1bc
+		background-color: #A8B1BC
 		cursor: pointer
 		+hide-text
-		border-radius: 50% 
+		border-radius: 50%
 		&:hover
 			box-shadow: none
-	
+
+.case_slider
+	.slick-prev
+		left: -26px
+		z-index: 400
+		&:before
+			content: ""
+			background-color: #FFF
+			display: inline-block
+			vertical-align: middle
+			background-image: url("../img/sl-prew.jpg")
+			width: 52px
+			height: 110px
+			margin-top: -55px
+	.slick-next
+		right: -26px
+		z-index: 400
+		&:before
+			content: ""
+			display: inline-block
+			background-color: #FFF
+			display: inline-block
+			vertical-align: middle
+			background-image: url("../img/sl-next.jpg")
+			width: 52px
+			height: 109px
+			margin-top: -55px
+
+
+.comment__slider
+	.slick-prev
+		top: 10px
+		left: -6px
+		z-index: 400
+		&:before
+			content: ""
+			background-color: #FFF
+			display: inline-block
+			vertical-align: middle
+			background-image: url("../img/com_l.jpg")
+			width: 136px
+			height: 141px
+			// margin-top: -70px
+	.slick-next
+		top: 7px
+		right: -10px
+		z-index: 400
+		&:before
+			content: ""
+			display: inline-block
+			background-color: #FFF
+			display: inline-block
+			vertical-align: middle
+			background-image: url("../img/com_r.jpg")
+			width: 136px
+			height: 141px
+			// margin-top: -70px
