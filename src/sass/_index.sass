@@ -88,7 +88,8 @@
 		text-align: center
 		margin: 30px 0 35px
 		letter-spacing: 2px
-		+osn
+		font-family: Arial
+		font-weight: 600
 		i
 			position: absolute
 			top: -25px
@@ -103,7 +104,8 @@
 		text-transform: uppercase
 		color: #262626
 		margin: 50px 0
-		+osn
+		font-family: Arial
+		font-weight: 600
 		span
 			text-transform: uppercase
 			color: #6CC9FF
@@ -158,6 +160,7 @@
 	text-transform: uppercase
 	+clr
 	+r(768)
+		width: 50%
 		margin: 20px 0
 		padding: 0 20px
 	+r(640)
@@ -171,7 +174,8 @@
 		font-size: 14px
 		color: #262626
 		height: 120px
-		+osn
+		font-family: Arial
+		font-weight: 600
 		+r(768)
 			height: auto
 			margin-bottom: 10px
@@ -181,11 +185,13 @@
 .comment_slider
 	+clr
 .comment
-	float: left
 	width: 600px
-	padding: 65px 20px
 	border: 1px solid #d8dee5
+	float: left
+	padding: 65px 60px
 	text-align: center
+	vertical-align: top
+	+clr
 	+r(480)
 		padding: 40px 10px
 	h5
@@ -230,6 +236,45 @@
 		height: 10px
 
 
+.all_coments
+	.comment
+		&:nth-child(odd)
+			float: left
+			+r(768)
+				float: none
+				width: 100%
+		&:nth-child(even)
+			float: right
+			+r(768)
+				float: none
+				width: 100%
+		.comment__figure
+			text-align: left
+.be_first
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: -1px
+		left: -7px
+		width: 133px
+		height: 133px
+		background-image: url("../img/befirst.jpg")
+		+r(768)
+			content: none
+.be_second
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: -1px
+		right: -6px
+		width: 130px
+		height: 133px
+		background-image: url("../img/besecond.jpg")
+		+r(768)
+			content: none
+
 // ############
 // -------------
 // BANER
@@ -258,7 +303,8 @@
 		font-size: 18px
 		text-transform: uppercase
 		color: #B86FD3
-		+osn
+		font-family: Arial
+		font-weight: 600
 		+r(640)
 			font-size: 16px
 			margin-top: 20px
