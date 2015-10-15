@@ -3,17 +3,19 @@
 <head>
 	<title>index</title>
 	//= includes/head.html
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <!-- BEGIN out-->
 <div class="out">
 	//= includes/header.html
-	<div class="create">
-		<h2 class="titlle__big">Создание сайтов</h2>
-	</div>
+
 	<div class="big_slider">
 		<div class="slick-slideshow">
 			<div class="big_slider_item">
+				<div class="create">
+					<h2 class="titlle__big">Создание сайтов</h2>
+				</div>
 				<div class="create__idea">
 					<p class="create__idea_start">от идеи</p>
 					<p class="create__idea_last">к успеху</p>
@@ -24,6 +26,9 @@
 				</div>
 			</div>
 			<div class="big_slider_item">
+				<div class="create">
+					<h2 class="titlle__big">Поддержка сайтов</h2>
+				</div>
 				<div class="create__idea">
 					<p class="create__idea_start">от недостатков</p>
 					<p class="create__idea_last">к совершенству</p>
@@ -34,6 +39,9 @@
 				</div>
 			</div>
 			<div class="big_slider_item">
+				<div class="create">
+					<h2 class="titlle__big">Поддержка сайтов</h2>
+				</div>
 				<div class="create__idea">
 					<p class="create__idea_start">от идеи</p>
 					<p class="create__idea_last">к успеху</p>
@@ -92,36 +100,9 @@
 	<div class="delimiter">
 		<h2 class="titlle__big">Почему мы?</h2>
 		<p class="foreword"> 14 лет на рынке интернет-разработок и множество наград <br> 20 опытных и креативных сотрудника всегда готовы взяться за ваш проект <br> 997 отборных проектов, в которые мы вложили частичку нас</p>
-		<div class="container ">
-			<div class="work">
-				<div class="pentagon">
-					<i class="icon_card"></i>
-					<img src="img/icons/pt.png" alt="Иллюстрация">
-				</div>
-				<p class="work__text">индивидуальный <br> <span>подход</span> к каждому <br> клиенту</p>
-			</div>
-			<div class="work">
-				<div class="pentagon">
-					<i class="icon_doc"></i>
-					<img src="img/icons/ptr.png" alt="Иллюстрация">
-				</div>
-				<p class="work__text">индивидуальный <br> <span>подход</span> к каждому <br> клиенту</p>
-			</div>
-			<div class="work">
-				<div class="pentagon">
-					<i class="icon_finger"></i>
-					<img src="img/icons/pb.png" alt="Иллюстрация">
-				</div>
-				<p class="work__text">индивидуальный <br> <span>подход</span> к каждому <br> клиенту</p>
-			</div>
-			<div class="work">
-				<div class="pentagon">
-					<i class="icon_diplom"></i>
-					<img src="img/icons/ptl.png" alt="Иллюстрация">
-				</div>
-				<p class="work__text">индивидуальный <br> <span>подход</span> к каждому <br> клиенту</p>
-			</div>
-		</div>
+
+		//= includes/poligon.html
+
 	</div><!-- end delimiter -->
 		<!-- begin delimiter  -->
 	<div class="delimiter">
@@ -165,27 +146,9 @@
 			</div>
 		</div>
 	</div><!-- end delimiter -->
-	<div class="banner">
-		<img src="img/baner.jpg" alt="Иллюстрация">
-		<div class="banner__wrap">
-			<h2 class="titlle__big">Баннер в подарок!</h2>
-			<p class="foreword">закажите создание или продвижение сайта <br> и получите баннер в подарок</p>
-			<h6 class="case__name"><i class="icon_pen"></i>До окончания акции осталось: <span>3 дня</span></h6>
-		</div>
-	</div>
-	<div class="container">
-		<form action="." class="order">
-			<div class="order__name">
-				<label for="name">Ваше имя</label>
-				<input type="text" name="name" id="">
-			</div>
-			<div class="order__tel">
-				<label for="tel">Телефон</label>
-				<input type="text" name="tel" id="" placeholder="+7 (   )  -  -  ">
-			</div>
-			<button class="btn">Получить подарок</button>
-		</form>
-	</div>
+
+	//= includes/baner_form.html
+
 </div> <!-- END out -->
 //= includes/footer.html
 </body>
