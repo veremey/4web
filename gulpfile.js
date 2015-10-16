@@ -186,7 +186,7 @@ gulp.task('build', [
     'jade:build',
     'js:build',
     'sass:build',
-    'sprite:build',
+    // 'sprite:build',
     'fonts:build',
     'image:build',
     'svg:build'
@@ -203,9 +203,9 @@ gulp.task('watch', function(){
     watch([path.watch.sass], function(event, cb) {
         gulp.start('sass:build');
     });
-    watch([path.watch.icons], function(event, cb) {
-        gulp.start('sprite:build');
-    });
+    // watch([path.watch.icons], function(event, cb) {
+    //     gulp.start('sprite:build');
+    // });
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');
     });

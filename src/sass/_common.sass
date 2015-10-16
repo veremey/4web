@@ -101,41 +101,6 @@
 	font-family: 'opensansextrabold-webfont', Arial, sans-serif
 	font-weight: 800
 
-
-
-
-
-
-
-// =hl
-// 	font-family: 'helveticaneuecyr-light-webfont', Arial, sans-serif
-// 	font-weight: 100
-
-// +font(helveticaneuecyr-thin-webfont, helveticaneuecyr-thin-webfont)
-// =ht
-// 	font-family: 'helveticaneuecyr-thin-webfont', Arial, sans-serif
-// 	font-weight: 300
-
-// +font(helveticaneuecyr-ultralight-webfont, helveticaneuecyr-ultralight-webfont)
-// =hu
-// 	font-family: 'helveticaneuecyr-ultralight-webfont', Arial, sans-serif
-// 	font-weight: 100
-
-// =osl
-// 	font-family: 'Open Sans Condensed', Arial, sans-serif
-// 	font-weight: 300
-// =osn
-// 	font-family: 'Open Sans Condensed', Arial, sans-serif
-// 	font-weight: 400
-// =osb
-// 	font-family: 'Open Sans Condensed', Arial, sans-serif
-// 	font-weight: 800
-// =ose
-// 	font-family: 'Open Sans Condensed', Arial, sans-serif
-// 	font-weight: 800
-
-
-
 a
 	text-decoration: none
 	&:hover
@@ -151,6 +116,7 @@ $n: transparent
 $black: #181818
 $green: #4bcd82
 $blue: #6cc9ff
+$f: #bc7ad6
 
 .clear
 	clear: both
@@ -179,12 +145,6 @@ body
 	color: $black
 	min-width: 300px
 
-// .icon-marker
-// 	display: inline-block
-// 	+s($marker)
-// .icon-smile-svg
-// 	display: inline-block
-// 	+svg(smile,100,100)
 
 // #### HEADER ###
 
@@ -271,6 +231,9 @@ body
 		&:active
 			a
 				color: #67A9CF
+		&.is_active
+			a
+				color: #BC7AD6
 		a
 			font-size: 14px
 			color: #181818
@@ -320,7 +283,7 @@ body
 		width: 17px
 		height: 17px
 		background-image: url("../img/icons/icon_tel.png")
-		+r(768)
+		+r(640)
 			content: none
 	+r(768)
 		+vcenter

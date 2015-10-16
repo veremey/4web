@@ -57,7 +57,7 @@ $(document).ready( function() {
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 1000000,
+		autoplaySpeed: 10000,
 		dots: false,
 		responsive: [
 			{
@@ -83,6 +83,15 @@ $(document).ready( function() {
 				}
 			}
 		]
+	});
+
+
+	$(".casein__slider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 600000,
+		dots: false,
 	});
 
 

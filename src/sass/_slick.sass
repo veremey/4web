@@ -206,3 +206,39 @@
 			width: 52px
 			height: 109px
 			// margin-top: -70px
+.casein__slider
+	.slick-prev
+		top: -45px
+		left: 43%
+		z-index: 400
+		+r(640)
+			left: 41%
+		+r(320)
+			left: 32%
+		&:before
+			content: ""
+			background-color: #FFF
+			display: inline-block
+			vertical-align: middle
+			background-image: url("../img/icons/cal.png")
+			width: 48px
+			height: 48px
+	.slick-next
+		top: -45px
+		right: 49%
+		z-index: 400
+		+r(768)
+			right: 43%
+		+r(640)
+			right: 41%
+		+r(320)
+			right: 32%
+		&:before
+			content: ""
+			display: inline-block
+			background-color: #FFF
+			display: inline-block
+			vertical-align: middle
+			background-image: url("../img/icons/car.png")
+			width: 48px
+			height: 48px
