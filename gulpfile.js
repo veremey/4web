@@ -136,24 +136,24 @@ gulp.task('sass:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('sprite:build', function() {
-    var spriteData =
-        gulp.src(path.src.icons)
-            .pipe(plumber())
-            .pipe(spritesmith({
-                imgName: 'sprite.png',
-                cssName: '_sprite.sass',
-                cssFormat: 'sass',
-                algorithm: 'binary-tree',
-                cssTemplate: 'sass.template.mustache',
-                cssVarMap: function(sprite) {
-                    sprite.name = sprite.name
-                }
-            }));
+// gulp.task('sprite:build', function() {
+//     var spriteData =
+//         gulp.src(path.src.icons)
+//             .pipe(plumber())
+//             .pipe(spritesmith({
+//                 imgName: 'sprite.png',
+//                 cssName: '_sprite.sass',
+//                 cssFormat: 'sass',
+//                 algorithm: 'binary-tree',
+//                 cssTemplate: 'sass.template.mustache',
+//                 cssVarMap: function(sprite) {
+//                     sprite.name = sprite.name
+//                 }
+//             }));
 
-    spriteData.img.pipe(gulp.dest('build/img/'));
-    spriteData.css.pipe(gulp.dest('./src/sass/lib/'));
-});
+//     spriteData.img.pipe(gulp.dest('build/img/'));
+//     spriteData.css.pipe(gulp.dest('./src/sass/lib/'));
+// });
 
 gulp.task('image:build', function () {
     gulp.src(path.src.img)

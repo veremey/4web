@@ -7,13 +7,15 @@
 		position: relative
 		display: inline-block
 		margin-right: 50px
+		font-size: 30px
+		+h3
 		&:last-child
 			margin-right: 0
 .create__idea_start
 	&:before
 		content: ""
 		position: absolute
-		top: 9px
+		top: 22px
 		left: -20px
 		width: 9px
 		height: 9px
@@ -21,7 +23,7 @@
 	&:after
 		content: ""
 		position: absolute
-		top: 9px
+		top: 22px
 		right: -35px
 		width: 13px
 		height: 10px
@@ -30,7 +32,7 @@
 	&:after
 		content: ""
 		position: absolute
-		top: 12px
+		top: 22px
 		right: -35px
 		width: 13px
 		height: 7px
@@ -50,9 +52,10 @@
 		+vcenter
 		color: #fff
 		font-size: 18px
+		+h4
 		// +rotate(-10)
 		// transform-origin: 170% 300% 0
-		+hl
+		// +hl
 		span
 			font-size: 36px
 			line-height: 1.1
@@ -88,8 +91,7 @@
 		text-align: center
 		margin: 30px 0 35px
 		letter-spacing: 2px
-		font-family: Arial
-		font-weight: 600
+		+h6
 		i
 			position: absolute
 			top: -25px
@@ -104,8 +106,7 @@
 		text-transform: uppercase
 		color: #262626
 		margin: 50px 0
-		font-family: Arial
-		font-weight: 600
+		+h6
 		span
 			text-transform: uppercase
 			color: #6CC9FF
@@ -174,8 +175,7 @@
 		font-size: 14px
 		color: #262626
 		height: 120px
-		font-family: Arial
-		font-weight: 600
+		+h6
 		+r(768)
 			height: auto
 			margin-bottom: 10px
@@ -199,20 +199,20 @@
 		color: $black
 		text-transform: uppercase
 		margin: 20px 0 10px
-		+osb
+		+h6
 	img
 		display: inline-block !important
 .comment__company
 	font-size: 12px
 	text-transform: uppercase
 	color: $blue
-	+osb
+	+h5
 .comment__figure
 	position: relative
 	padding: 55px 20px
 	font-size: 16px
 	margin-top: 40px
-	+hl
+	+h4
 	+r(480)
 		margin-top: 30px
 		padding: 35px 10px
@@ -303,8 +303,7 @@
 		font-size: 18px
 		text-transform: uppercase
 		color: #B86FD3
-		font-family: Arial
-		font-weight: 600
+		+h6
 		+r(640)
 			font-size: 16px
 			margin-top: 20px
@@ -313,7 +312,7 @@
 		font-size: 16px
 		text-transform: none
 		color: $black
-		+hu
+		+h4
 		+r(640)
 			font-size: 16px
 		span

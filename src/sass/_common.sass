@@ -47,33 +47,92 @@
 // p
 // 	+jpg(bla)
 
-+font(helveticaneuecyr-light-webfont, helveticaneuecyr-light-webfont)
-=hl
-	font-family: 'helveticaneuecyr-light-webfont', Arial, sans-serif
-	font-weight: 100
++font(helv-2-ulight-webfont, helv-2-ulight-webfont)
++font(helv-3-thin-webfont, helv-3-thin-webfont)
++font(helv-4-light-webfont, helv-4-light-webfont)
++font(helv-5-normal-webfont, helv-5-normal-webfont)
++font(helv-6-medium-webfont, helv-6-medium-webfont)
++font(helv-7-bold-webfont, helv-7-bold-webfont)
++font(helv-8-heavy-webfont, helv-8-heavy-webfont)
++font(helv-9-black-webfont, helv-9-black-webfont)
 
-+font(helveticaneuecyr-thin-webfont, helveticaneuecyr-thin-webfont)
-=ht
-	font-family: 'helveticaneuecyr-thin-webfont', Arial, sans-serif
+
+
++font(opensanslight-webfont, opensanslight-webfont)
++font(opensansbold-webfont, opensansbold-webfont)
++font(opensansextrabold-webfont, opensansextrabold-webfont)
+
+
+
+=h2
+	font-family: 'helv-2-ulight-webfont', Arial, sans-serif
+	font-weight: 200
+=h3
+	font-family: 'helv-3-thin-webfont', Arial, sans-serif
 	font-weight: 300
+=h4
+	font-family: 'helv-4-light-webfont', Arial, sans-serif
+	font-weight: 400
+=h5
+	font-family: 'helv-5-normal-webfont', Arial, sans-serif
+	font-weight: 500
+=h6
+	font-family: 'helv-6-medium-webfont', Arial, sans-serif
+	font-weight: 600
+=h7
+	font-family: 'helv-7-bold-webfont', Arial, sans-serif
+	font-weight: 700
+=h8
+	font-family: 'helv-8-heavy-webfont', Arial, sans-serif
+	font-weight: 800
+=h9
+	font-family: 'helv-9-black-webfont', Arial, sans-serif
+	font-weight: 900
 
-+font(helveticaneuecyr-ultralight-webfont, helveticaneuecyr-ultralight-webfont)
-=hu
-	font-family: 'helveticaneuecyr-ultralight-webfont', Arial, sans-serif
-	font-weight: 100
+
 
 =osl
-	font-family: 'Open Sans Condensed', Arial, sans-serif
+	font-family: 'opensanslight-webfont', Arial, sans-serif
 	font-weight: 300
-=osn
-	font-family: 'Open Sans Condensed', Arial, sans-serif
-	font-weight: 400
 =osb
-	font-family: 'Open Sans Condensed', Arial, sans-serif
-	font-weight: 800
+	font-family: 'opensansbold-webfont', Arial, sans-serif
+	font-weight: 700
 =ose
-	font-family: 'Open Sans Condensed', Arial, sans-serif
+	font-family: 'opensansextrabold-webfont', Arial, sans-serif
 	font-weight: 800
+
+
+
+
+
+
+
+// =hl
+// 	font-family: 'helveticaneuecyr-light-webfont', Arial, sans-serif
+// 	font-weight: 100
+
+// +font(helveticaneuecyr-thin-webfont, helveticaneuecyr-thin-webfont)
+// =ht
+// 	font-family: 'helveticaneuecyr-thin-webfont', Arial, sans-serif
+// 	font-weight: 300
+
+// +font(helveticaneuecyr-ultralight-webfont, helveticaneuecyr-ultralight-webfont)
+// =hu
+// 	font-family: 'helveticaneuecyr-ultralight-webfont', Arial, sans-serif
+// 	font-weight: 100
+
+// =osl
+// 	font-family: 'Open Sans Condensed', Arial, sans-serif
+// 	font-weight: 300
+// =osn
+// 	font-family: 'Open Sans Condensed', Arial, sans-serif
+// 	font-weight: 400
+// =osb
+// 	font-family: 'Open Sans Condensed', Arial, sans-serif
+// 	font-weight: 800
+// =ose
+// 	font-family: 'Open Sans Condensed', Arial, sans-serif
+// 	font-weight: 800
 
 
 
@@ -246,10 +305,23 @@ body
 			height: 38px
 			background-image: url("../img/icons/tel1.png")
 .header__contact
+	position: relative
 	float: right
 	line-height: 80px
 	color: $black
+	+osl
 	+tr(.2s)
+	&:before
+		content: ""
+		position: absolute
+		display: block
+		top: 31px
+		left: -30px
+		width: 17px
+		height: 17px
+		background-image: url("../img/icons/icon_tel.png")
+		+r(768)
+			content: none
 	+r(768)
 		+vcenter
 	+r(640)
@@ -279,6 +351,8 @@ body
 	.title__small
 		vertical-align: top
 		margin: 0 75px 20px 0
+		font-size: 12px
+		+h6
 	.menu__footer
 		@extend .menu
 		+r(768)
@@ -298,7 +372,7 @@ body
 	line-height: 1
 	margin-bottom: 25px
 	color: #1e1e1e
-	+hl
+	// +hl
 .footer__tel
 	display: block
 	font-size: 14px
@@ -308,8 +382,8 @@ body
 .title__small
 	font-size: 12px
 	text-transform: uppercase
-	font-weight: bold
 	letter-spacing: 1px
+	+h6
 	a
 		color: #1e1e1e
 .footer__list
@@ -320,7 +394,7 @@ body
 	a
 		font-size: 14px
 		color: #1e1e1e
-		+hl
+		+h4
 .footer__item
 	float: left
 	margin: 0 75px 20px 0
@@ -330,6 +404,7 @@ body
 	display: inline-block
 	margin-top: 25px
 	color: #1e1e1e
+	+h4
 .vk
 	padding-left: 15px
 	margin-left: 30px
