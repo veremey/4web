@@ -259,15 +259,22 @@
 	+r(768)
 		margin-left: 60px
 	h4
-		margin: 10px 0 30px
-		font-size: 14px
-		text-transform: uppercase
-		color: $black
-		+h6
-		+r(768)
-			margin-top: 0
-			font-size: 14px
+		position: relative
+		height: 60px
+		margin-bottom: 10px
+		span
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
 			text-align: left
+			font-size: 14px
+			text-transform: uppercase
+			color: $black
+			+h6
+			+r(768)
+				margin-top: 0
+				font-size: 14px
+				text-align: left
 	p
 		font-size: 15px
 		line-height: 25px
@@ -295,6 +302,8 @@
 .casein__slider
 	margin-top: 80px
 	+clr
+	+r(640)
+		margin-bottom: 30px
 	.btn
 		float: right
 		margin-right: 60px
@@ -306,9 +315,7 @@
 			margin: 0 0 20px 50%
 			transform: translate(-50%, 0)
 		+r(320)
-			width: 100%
-			margin: 0
-			transform: translate(0, 0)
+			display: none
 
 	.comment
 		width: 25%

@@ -123,8 +123,14 @@ $f: #bc7ad6
 	height: 0
 
 .out
+	margin: 0 auto
 	+r(768)
+		width: 768px
 		overflow: hidden
+	+r(640)
+		width: 640px
+	+r(320)
+		width: 320px
 
 .container
 	position: relative
@@ -143,7 +149,13 @@ body
 	font-size: 16px
 	line-height: 1.75
 	color: $black
-	min-width: 300px
+	min-width: 1250px
+	+r(768)
+		min-width: 768px
+	+r(640)
+		min-width: 640px
+	+r(320)
+		min-width: 300px
 
 
 // #### HEADER ###

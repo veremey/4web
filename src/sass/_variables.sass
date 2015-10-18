@@ -13,6 +13,7 @@
 
 .pentagon
 	position: relative
+	text-align: center
 	i
 		+vcenter
 
@@ -31,6 +32,7 @@
 	+h2
 	+r(640)
 		font-size: 32px
+		line-height: 41px
 
 .title__small
 	font-size: 16px
@@ -59,6 +61,7 @@
 		margin-left: -8px
 		+arr(16,9,#e5e5e5,b)
 	.btn
+		margin: 70px 0 150px
 		padding: 0 20px
 		width: auto
 
@@ -167,6 +170,42 @@ a
 	+r(640)
 		display: none
 
+.box_400,
+.column
+	float: left
+	display: inline-block
+	width: 400px
+	+clr
+	+r(768)
+		width: 342px
+	+r(640)
+		width: 100%
 
+.column
+	.box_400
+		border-bottom: 1px solid #d1d6dd
+		&:last-child
+			border-bottom: 0
 
-
+.column_third
+	+r(768)
+		width: 100%
+		border-bottom: 0
+		border-left: 0
+	.box_400
+		+r(768)
+			width: 50%
+			border-left: 1px solid #d1d6dd
+			&:last-child
+				border-bottom: 1px solid #d1d6dd
+		+r(640)
+			width: 100%
+.border
+	border: 1px solid #d1d6dd
+	border-top: 0
+	margin-left: -1px
+	+r(640)
+		margin: 0
+.border-side
+	border: 1px solid #d1d6dd
+	border-top: 0

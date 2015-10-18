@@ -150,6 +150,10 @@
 	.slick-prev
 		left: -26px
 		z-index: 400
+		+r(640)
+			left: 5px
+			top: 0
+			margin-top: 0
 		&:before
 			content: ""
 			background-color: #FFF
@@ -159,9 +163,17 @@
 			width: 52px
 			height: 110px
 			margin-top: -55px
+			+r(640)
+				background-image: url("../img/icons/cal.png")
+				width: 48px
+				height: 48px
 	.slick-next
 		right: -26px
 		z-index: 400
+		+r(640)
+			right: 5px
+			top: 0
+			margin-top: 0
 		&:before
 			content: ""
 			display: inline-block
@@ -172,7 +184,10 @@
 			width: 52px
 			height: 109px
 			margin-top: -55px
-
+			+r(640)
+				width: 48px
+				height: 48px
+				background-image: url("../img/icons/car.png")
 
 .comment__slider
 	.slick-prev
@@ -189,9 +204,9 @@
 			height: 141px
 			// margin-top: -70px
 			+r(480)
-				background-image: url("../img/sl-prew.jpg")
-				width: 52px
-				height: 110px
+				background-image: url("../img/icons/cal.png")
+				width: 48px
+				height: 48px
 	.slick-next
 		top: 7px
 		right: -10px
@@ -202,10 +217,14 @@
 			background-color: #FFF
 			display: inline-block
 			vertical-align: middle
-			background-image: url("../img/sl-next.jpg")
-			width: 52px
-			height: 109px
+			background-image: url("../img/com_r.jpg")
+			width: 136px
+			height: 141px
 			// margin-top: -70px
+			+r(480)
+				width: 48px
+				height: 48px
+				background-image: url("../img/icons/car.png")
 .casein__slider
 	.slick-prev
 		top: -45px
