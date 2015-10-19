@@ -11,6 +11,11 @@
 			width: 265px
 
 
+.center
+	clear: both
+	text-align: center
+	margin: 0 auto
+
 .pentagon
 	position: relative
 	text-align: center
@@ -34,6 +39,23 @@
 		font-size: 32px
 		line-height: 41px
 
+.title__long
+	font-size: 60px
+	letter-spacing: 10px
+	color: #FFF
+	margin: 170px auto 60px
+	+osb
+	+r(640)
+		font-size: 32px
+	&_m
+		font-size: 18px
+		color: #3f3838
+		text-transform: uppercase
+		letter-spacing: 2px
+		margin: 80px 0 60px
+		text-align: center
+		+osb
+
 .title__small
 	font-size: 16px
 	text-transform: uppercase
@@ -45,12 +67,10 @@
 	font-size: 16px
 	color: #262626
 	+h4
-
-.center
-	clear: both
-	text-align: center
-	margin: 0 auto
-
+.foreword_top
+	color: $black
+	font-size: 18px
+	+osl
 .more
 	position: relative
 	&:after
@@ -209,3 +229,8 @@ a
 .border-side
 	border: 1px solid #d1d6dd
 	border-top: 0
+
+.top_285
+	margin-top: 285px
+	+r(640)
+		margin-top: 140px

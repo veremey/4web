@@ -93,3 +93,82 @@
 		vertical-align: top
 		max-width: 100%
 		width: 100%
+
+
+
+// ################
+// ################
+// ADEPT
+// #
+// ##########
+
+.long
+	position: relative
+	// min-height: 715px
+	+clr
+	&__img
+		vertical-align: top
+		img
+			vertical-align: top
+			max-width: 100%
+			width: auto
+.long__text
+	+coverdiv
+.long__foreword
+	position: relative
+	color: #FFF
+	font-size: 18px
+	text-align: center
+	padding: 120px 0
+	&:before
+		content: ""
+		position: absolute
+		left: 50%
+		top: 0
+		width: 1px
+		height: 55px
+		background-color: #FFF
+
+.long__img_center
+	text-align: center
+	img
+		vertical-align: top
+		max-width: 100%
+
+.another
+	font-size: 0
+	margin-bottom: 100px
+	+clr
+	+r(640)
+		margin-bottom: 40px
+	li
+		position: relative
+		width: 50%
+		float: left
+		border-top: 1px solid #e8e8e8
+		height: 90px
+		+r(640)
+			width: 100%
+			padding-left: 50px
+		span
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			font-size: 18px
+			line-height: 90px
+			padding-left: 115px
+			+box
+			+osl
+			+r(640)
+				line-height: 21px
+				padding-left: 20px
+		i
+			content: ""
+			position: absolute
+			top: 20px
+			left: 50px
+			width: 44px
+			height: 44px
+			background-image: url("../img/icons/big_check.png")
+			+r(640)
+				left: 0px
