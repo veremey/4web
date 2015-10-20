@@ -191,40 +191,47 @@
 
 .comment__slider
 	.slick-prev
-		top: 10px
-		left: -6px
+		top: 14px
+		left: -1px
 		z-index: 400
+		+r(640)
+			top: 10px
+			background-color: #F4F8FF
 		&:before
 			content: ""
-			background-color: #FFF
 			display: inline-block
 			vertical-align: middle
 			background-image: url("../img/com_l.jpg")
-			width: 136px
-			height: 141px
+			width: 131px
+			height: 137px
+			background-color: transparent
 			// margin-top: -70px
 			+r(480)
 				background-image: url("../img/icons/cal.png")
 				width: 48px
 				height: 48px
+				background-color: #F4F8FF
 	.slick-next
-		top: 7px
-		right: -10px
+		top: 13px
+		right: 0
 		z-index: 400
+		+r(640)
+			top: 10px
 		&:before
 			content: ""
 			display: inline-block
-			background-color: #FFF
+			background-color: transparent
 			display: inline-block
 			vertical-align: middle
 			background-image: url("../img/com_r.jpg")
-			width: 136px
-			height: 141px
+			width: 127px
+			height: 138px
 			// margin-top: -70px
 			+r(480)
 				width: 48px
 				height: 48px
 				background-image: url("../img/icons/car.png")
+				background-color: #F4F8FF
 .casein__slider
 	.slick-prev
 		top: -45px

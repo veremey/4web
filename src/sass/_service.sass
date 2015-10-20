@@ -147,7 +147,8 @@
 				background-image: url("../img/aq1.jpg")
 				+rotate(90)
 				z-index: 1
-		&.is_active
+		&.is_active,
+		&:hover
 			background-color: #01CAFE
 			&:last-child::before
 				background-image: url("../img/aq11.jpg")
@@ -167,8 +168,6 @@
 		+h4
 		+r(320)
 			padding: 0 10px
-		&:hover
-			color: lighten(#01CAFE, 20%)!important
 	+ .foreword
 		margin: 40px 0
 
