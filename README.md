@@ -23,11 +23,17 @@ myCV:  [google drive](https://drive.google.com/open?id=1TK9mt61RCe0p68Jt_lBX8pRn
 
 * [index.html](http://veremey.github.io/4web/build)
 
-
-* [comment.html](http://veremey.github.io/4web/build/comments.html)
-
+* [comments.html](http://veremey.github.io/4web/build/comments.html)
 
 * [about.html](http://veremey.github.io/4web/build/about.html)
+
+* [portfolio.html](http://veremey.github.io/4web/build/portfolio.html)
+
+* [portfolio_adept.html](http://veremey.github.io/4web/build/portfolio_adept.html)
+
+* [service.html](http://veremey.github.io/4web/build/service.html)
+
+* [service_inside.html](http://veremey.github.io/4web/build/service_inside.html)
 
 ## Как это использовать
 
