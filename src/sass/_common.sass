@@ -1,52 +1,3 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)
-// =book
-// 	font-family: "book", Arial, sans-serif
-// insert pics into css
-// div
-// 	+pic("blabla.png")
-// span
-// 	+png(blabla)
-// p
-// 	+jpg(bla)
-
 +font(helv-2-ulight-webfont, helv-2-ulight-webfont)
 +font(helv-3-thin-webfont, helv-3-thin-webfont)
 +font(helv-4-light-webfont, helv-4-light-webfont)
@@ -124,6 +75,7 @@ $f: #bc7ad6
 
 .out
 	margin: 0 auto
+	position: relative
 	+r(768)
 		width: 768px
 		overflow: hidden
@@ -161,10 +113,7 @@ body
 // #### HEADER ###
 
 
-.back
-	+g(#f2f7ff, #fff)
-	+coverdiv
-	height: 680px
+
 .header
 	+clr
 	+r(768)
@@ -198,6 +147,7 @@ body
 	font-size: 0
 	display: inline-block
 	vertical-align: top
+	margin-top: 5px
 	+r(768)
 		// display: none
 		position: absolute

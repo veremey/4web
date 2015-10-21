@@ -30,10 +30,11 @@
 // ################### title
 
 
-.titlle__big
+.title__big
 	font-size: 84px
 	text-align: center
 	letter-spacing: .5px
+	padding: 60px 0 40px
 	+h2
 	+r(640)
 		font-size: 32px
@@ -97,6 +98,48 @@ a
 	&:active
 		color: #67A9CF
 
+.back
+	+g(#f2f7ff, #fff)
+	+coverdiv
+	height: 680px
+
+.fon
+	position: absolute
+	bottom: 0
+	height: 488px
+	width: 1522px
+	left: 50%
+	transform: translateX(-50%)
+	// z-index: 9999
+	display: block
+	// background-color: red
+	background-image: url("../img/fon.png")
+.fon1
+	position: absolute
+	top: 230px
+	left: -85px
+	width: 954px
+	height: 607px
+	background-image: url("../img/fon1.png")
+	+r(768)
+		top: 291px
+		left: 36px
+		width: 409px
+		height: 336px
+		background-image: url("../img/fon2.png")
+	+r(640)
+		top: 185px
+	+r(320)
+		top: 135px
+.fon2
+	position: absolute
+	top: 0
+	left: 50%
+	transform: translateX(-50%)
+	width: 1289px
+	height: 263px
+	background-image: url("../img/fon3.png")
+
 
 .btn
 	// width: 152px
@@ -129,7 +172,7 @@ a
 		text-align: center
 		margin: 0 35px
 		+r(640)
-			display: block
+			display: none
 			margin: 0
 			padding: 0 20px
 			border: 1px solid #dbe1e8
@@ -156,6 +199,9 @@ a
 			&:after
 				content: none
 		&.is_active
+			+r(640)
+				display: block
+				border-bottom: 1px solid #dbe1e8
 			a
 				color: #B86FD3
 				&:before
@@ -221,6 +267,7 @@ a
 	float: left
 	display: inline-block
 	width: 400px
+	overflow: hidden
 	+clr
 	+r(768)
 		width: 342px
