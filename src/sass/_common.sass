@@ -1,46 +1,41 @@
-+font(helv-2-ulight-webfont, helv-2-ulight-webfont)
-+font(helv-3-thin-webfont, helv-3-thin-webfont)
-+font(helv-4-light-webfont, helv-4-light-webfont)
-+font(helv-5-normal-webfont, helv-5-normal-webfont)
-+font(helv-6-medium-webfont, helv-6-medium-webfont)
-+font(helv-7-bold-webfont, helv-7-bold-webfont)
-+font(helv-8-heavy-webfont, helv-8-heavy-webfont)
-+font(helv-9-black-webfont, helv-9-black-webfont)
-
-
++font(HelveticaNeueCyrUltraLight, HelveticaNeueCyrUltraLight)
++font(helveticaneuecyr-thin-webfont, helveticaneuecyr-thin-webfont)
++font(helveticaneuecyr-light-webfont, helveticaneuecyr-light-webfont)
++font(helveticaneuecyr-roman-webfont, helveticaneuecyr-roman-webfont)
++font(helveticaneuecyr-medium-webfont, helveticaneuecyr-medium-webfont)
++font(helveticaneuecyr-bold-webfont, helveticaneuecyr-bold-webfont)
++font(helveticaneuecyr-heavy-webfont, helveticaneuecyr-heavy-webfont)
++font(helveticaneuecyr-black-webfont, helveticaneuecyr-black-webfont)
 
 +font(opensanslight-webfont, opensanslight-webfont)
 +font(opensansbold-webfont, opensansbold-webfont)
 +font(opensansextrabold-webfont, opensansextrabold-webfont)
 
 
-
 =h2
-	font-family: 'helv-2-ulight-webfont', Arial, sans-serif
-	font-weight: 200
+	font-family: 'HelveticaNeueCyrUltraLight', Arial, sans-serif
+	font-weight: 100
 =h3
-	font-family: 'helv-3-thin-webfont', Arial, sans-serif
+	font-family: 'helveticaneuecyr-thin-webfont', Arial, sans-serif
 	font-weight: 300
 =h4
-	font-family: 'helv-4-light-webfont', Arial, sans-serif
+	font-family: 'helveticaneuecyr-light-webfont', Arial, sans-serif
 	font-weight: 400
 =h5
-	font-family: 'helv-5-normal-webfont', Arial, sans-serif
+	font-family: 'helveticaneuecyr-roman-webfont', Arial, sans-serif
 	font-weight: 500
 =h6
-	font-family: 'helv-6-medium-webfont', Arial, sans-serif
+	font-family: 'helveticaneuecyr-medium-webfont', Arial, sans-serif
 	font-weight: 600
 =h7
-	font-family: 'helv-7-bold-webfont', Arial, sans-serif
+	font-family: 'helveticaneuecyr-bold-webfont', Arial, sans-serif
 	font-weight: 700
 =h8
-	font-family: 'helv-8-heavy-webfont', Arial, sans-serif
+	font-family: 'helveticaneuecyr-heavy-webfont', Arial, sans-serif
 	font-weight: 800
 =h9
-	font-family: 'helv-9-black-webfont', Arial, sans-serif
+	font-family: 'helveticaneuecyr-black-webfont', Arial, sans-serif
 	font-weight: 900
-
-
 
 =osl
 	font-family: 'opensanslight-webfont', Arial, sans-serif
@@ -51,6 +46,13 @@
 =ose
 	font-family: 'opensansextrabold-webfont', Arial, sans-serif
 	font-weight: 800
+
+
+// ###############################
+// -------------------------------
+// ###############################
+
+
 
 a
 	text-decoration: none
@@ -76,24 +78,29 @@ $f: #bc7ad6
 .out
 	margin: 0 auto
 	position: relative
-	+r(768)
-		width: 768px
-		overflow: hidden
-	+r(640)
-		width: 640px
-	+r(320)
-		width: 320px
+	+r(1270)
+		// width: 768px
+	// +r(768)
+
+
+	// 	width: 768px
+	// 	overflow: hidden
+	// +r(767)
+	// 	width: 640px
+	// +r(639)
+	// 	width: 320px
 
 .container
 	position: relative
 	width: 1200px
 	margin: 0 auto
 	+clr
-	+r(768)
+	+r(1270)
 		width: 684px
-	+r(640)
+	+r(767)
 		width: 575px
-	+r(320)
+	// +r(320)
+	+r(639)
 		width: 288px
 
 body
@@ -101,12 +108,12 @@ body
 	font-size: 16px
 	line-height: 1.75
 	color: $black
-	min-width: 1250px
-	+r(768)
-		min-width: 768px
-	+r(640)
-		min-width: 640px
-	+r(320)
+	// min-width: 1250px
+	// +r(1270)
+	// 	min-width: 768px
+	// +r(767)
+	// 	min-width: 640px
+	+r(639)
 		min-width: 300px
 
 
@@ -116,10 +123,10 @@ body
 
 .header
 	+clr
-	+r(768)
+	+r(1270)
 		height: 75px
 	nav
-		+r(768)
+		+r(1270)
 			position: absolute
 			top: 30px
 			right: 0
@@ -132,14 +139,14 @@ body
 	margin-top: 15px
 .menu
 	display: none
-	+r(768)
+	+r(1270)
 		display: block
 		float: right
 		width: 26px
 		background-color: $n
 		height: 17px
 		background-image: url("../img/icons/menu.png")
-		+r(640)
+		+r(767)
 			&.is_active
 				background-image: url("../img/icons/menu2.png")
 .header__menu
@@ -148,7 +155,7 @@ body
 	display: inline-block
 	vertical-align: top
 	margin-top: 5px
-	+r(768)
+	+r(1270)
 		// display: none
 		position: absolute
 		// top: 50px
@@ -165,33 +172,33 @@ body
 		display: inline-block
 		margin-right: 35px
 		+tr(.3s)
-		+r(768)
+		+r(1270)
 			display: block
-			width: 100vw
+			width: 100%
 			height: 58px//115px//
 			padding: 0 35px
 			margin: 0
 			background-color: #00cbff
 			border-bottom: 2px solid #52dcff
-		+r(640)
+		+r(767)
 			padding: 0 15px
 		&:last-child
 			margin-right: 0
 		&:hover
 			a
 				color: #6CC9FF
-			+r(768)
-				width: 100vw
+			+r(1270)
+				width: 100%
 				color: #FFF
 				padding: 0 50px
 				background-color: #00c2f4
 				transform: translate(-25px, 0)
 				a
 					color: #fff
-			+r(640)
+			+r(767)
 				padding: 0 30px
 				transform: translate(-15px, 0)
-			+r(320)
+			+r(639)
 				transform: translate(0, 0)
 				padding: 0 15px
 		&:active
@@ -207,13 +214,13 @@ body
 			line-height: 80px
 			+tr(.2s)
 			+osb
-			+r(768)
+			+r(1270)
 				display: block
 				line-height: 58px//115px//
 				color: #fff
 .header__tel
 	display: none
-	+r(640) //retina
+	+r(767) //retina
 		position: absolute
 		top: -5px
 		right: 40px
@@ -250,11 +257,11 @@ body
 		width: 17px
 		height: 17px
 		background-image: url("../img/icons/icon_tel.png")
-		+r(640)
+		+r(767)
 			content: none
-	+r(768)
+	+r(1270)
 		+vcenter
-	+r(640)
+	+r(767)
 		display: none
 
 
@@ -274,7 +281,7 @@ body
 	border-top: 1px solid #EDEEEF
 	+box
 	+clr
-	+r(768)
+	+r(1270)
 		padding: 55px 0 70px
 	.box_300
 		float: left
@@ -285,9 +292,9 @@ body
 		+h6
 	.menu__footer
 		@extend .menu
-		+r(768)
+		+r(1270)
 			display: none
-		+r(640)
+		+r(767)
 			display: block
 			position: absolute
 			top: 0
@@ -318,7 +325,7 @@ body
 		color: #1e1e1e
 .footer__list
 	font-size: 0
-	+r(768)
+	+r(1270)
 		display: none
 	li
 	a
@@ -347,30 +354,30 @@ body
 		background-image: url("../img/icons/vk.png")
 	&:hover
 		opacity: 0.7
-
-.hiden_640
-	+clr
-	+r(640)
-		display: none
-		&.is_active
-			display: block
-			position: absolute
-			bottom: 0
-			width: 100vw
-		// 	padding: 0 35px
-		// 	margin: 0
-		// 	background-color: #00cbff
-		// 	border-bottom: 2px solid #52dcff
-		// .box_300
-		// 	display: block
-		// 	margin: auto
-		// 	width: 100%!important
-		// 	.title__small
-		// 		margin: 0
-		// 		line-height: 40px
-		// .footer__item
-		// 	display: block
-		// 	float: none
-		// 	margin: 0
-		// 	height: 40px
-		// 	line-height: 40px
+.footer
+	.hiden_640
+		+clr
+		+r(767)
+			display: none
+			&.is_active
+				display: block
+				position: absolute
+				bottom: 0
+				width: 100%
+			// 	padding: 0 35px
+			// 	margin: 0
+			// 	background-color: #00cbff
+			// 	border-bottom: 2px solid #52dcff
+			// .box_300
+			// 	display: block
+			// 	margin: auto
+			// 	width: 100%!important
+			// 	.title__small
+			// 		margin: 0
+			// 		line-height: 40px
+			// .footer__item
+			// 	display: block
+			// 	float: none
+			// 	margin: 0
+			// 	height: 40px
+			// 	line-height: 40px

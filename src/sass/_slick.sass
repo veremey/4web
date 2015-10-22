@@ -121,6 +121,11 @@
 			button
 				background-color: transparent
 				box-shadow: none
+		&:active
+			button
+				background-color: #000
+				border-color: #000
+				box-shadow: none
 		&:before
 			display: none
 	button
@@ -142,7 +147,7 @@
 	.slick-prev
 		left: -26px
 		z-index: 400
-		+r(640)
+		+r(790)
 			left: 5px
 			top: 0
 			margin-top: 0
@@ -155,14 +160,14 @@
 			width: 52px
 			height: 110px
 			margin-top: -55px
-			+r(640)
+			+r(790)
 				background-image: url("../img/icons/cal.png")
 				width: 48px
 				height: 48px
 	.slick-next
 		right: -26px
 		z-index: 400
-		+r(640)
+		+r(790)
 			right: 5px
 			top: 0
 			margin-top: 0
@@ -176,7 +181,7 @@
 			width: 52px
 			height: 109px
 			margin-top: -55px
-			+r(640)
+			+r(790)
 				width: 48px
 				height: 48px
 				background-image: url("../img/icons/car.png")
@@ -186,8 +191,8 @@
 		top: 14px
 		left: -1px
 		z-index: 400
-		+r(640)
-			top: 10px
+		+r(767)
+			// top: 10px
 			background-color: #F4F8FF
 		&:before
 			content: ""
@@ -198,7 +203,7 @@
 			height: 133px
 			background-color: #F4F8FF
 			// margin-top: -70px
-			+r(480)
+			+r(639)
 				background-image: url("../img/icons/cal.png")
 				width: 48px
 				height: 48px
@@ -207,8 +212,8 @@
 		top: 13px
 		right: 0
 		z-index: 400
-		+r(640)
-			top: 10px
+		+r(767)
+			// top: 10px
 		&:before
 			content: ""
 			display: inline-block
@@ -219,7 +224,7 @@
 			width: 127px
 			height: 133px
 			// margin-top: -70px
-			+r(480)
+			+r(639)
 				width: 48px
 				height: 48px
 				background-image: url("../img/icons/car.png")
@@ -229,9 +234,9 @@
 		top: -45px
 		left: 43%
 		z-index: 400
-		+r(640)
+		+r(767)
 			left: 41%
-		+r(320)
+		+r(639)
 			left: 32%
 		&:before
 			content: ""
@@ -245,11 +250,11 @@
 		top: -45px
 		right: 49%
 		z-index: 400
-		+r(768)
+		+r(1270)
 			right: 43%
-		+r(640)
+		+r(767)
 			right: 41%
-		+r(320)
+		+r(639)
 			right: 32%
 		&:before
 			content: ""
