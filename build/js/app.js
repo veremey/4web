@@ -15,7 +15,7 @@ $(document).ready( function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 600000,
+		autoplaySpeed: 10000,
 		dots: true,
 	});
 
@@ -56,6 +56,17 @@ $(document).ready( function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 600000,
+		autoplaySpeed: 6000,
 		dots: false,
 	});
+
+
+if($(document).width() < 767) {
+	$('.crumbs').click(function() {
+		$(this).children('li').toggleClass('show');
+	});
+
+	$('.crumbs li').click(function() {
+		$(this).addClass('is_active').siblings().removeClass('is_active');
+	});
+};

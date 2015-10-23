@@ -161,6 +161,8 @@ a
 		box-shadow: 0 0 4px 2px #fff inset
 
 .crumbs
+	position: relative
+	z-index: 300
 	margin: 0 auto
 	display: inline-block
 	+r(767)
@@ -199,6 +201,8 @@ a
 				border-bottom: 1px solid #dbe1e8
 			&:after
 				content: none
+		&.show
+			display: block
 		&.is_active
 			+r(767)
 				display: block
