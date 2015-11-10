@@ -12,7 +12,7 @@
 		+clr
 		+r(1270)
 			width: 50%
-		+r(767)
+		+r(700)
 			width: 100%
 			padding: 40px 20px
 	&__title
@@ -50,6 +50,7 @@
 		width: 50%
 		float: left
 		font-style: italic
+		z-index: 5
 		&:before
 			top: -20px
 			left: 0
@@ -63,6 +64,7 @@
 		width: 50%
 		float: left
 		font-style: italic
+		z-index: 5
 		&:after
 			top: 10px
 			right: -95px
@@ -74,6 +76,7 @@
 	width: 50%
 	height: 100%
 	text-align: center
+	z-index: 1
 	img
 		max-width: 100%
 		vertical-align: top
@@ -217,9 +220,11 @@
 	+clr
 	+r(639)
 		margin-bottom: 30px
+		text-align: center//+
 .mileston
 	display: inline-block
 	bottom: auto
+	text-align: left//+
 	// float: left
 	width: 49%
 	vertical-align: top
@@ -229,8 +234,15 @@
 	+r(1270)
 		padding-right: 50px
 	+r(639)
+		// width: 100%//
+		width: 61%//+
+		// padding: 15px 0//
+		padding: 15px 0 15px 60px//+
+		margin: 0 auto //+
+	+r(520)
+		width: 80%
+	+r(380)
 		width: 100%
-		padding: 15px 0
 	// &:nth-child(even)
 	// 	float: right
 	.pentagon
@@ -241,7 +253,8 @@
 		+r(1270)
 			width: 50px
 		+r(639)
-			top: 12px
+			// top: 12px//
+			top: 20px//+
 		&__wrap
 			position: relative
 		img
@@ -262,6 +275,8 @@
 	margin-left: 120px
 	+r(1270)
 		margin-left: 60px
+	+r(639)
+		margin-left: 0
 	h4
 		position: relative
 		height: 60px

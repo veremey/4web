@@ -8,9 +8,9 @@
 .slick-slideshow
 	min-width: 1200px
 	+r(1270)
-		min-width: 768px
+		min-width: 750px
 	+r(767)
-		min-width: 640px
+		min-width: 624px
 	+r(639)
 		min-width: 320px
 
@@ -129,6 +129,8 @@
 			width: 22px
 			margin-left: -11px
 			height: 22px
+		+ img
+			margin: 0 auto
 	&__text
 		text-align: center
 		font-size: 18px
@@ -194,8 +196,13 @@
 		margin: 20px 0
 		padding: 0 20px
 	+r(767)
-		width: 100%
+		// width: 100%
+		display: inline-block//+
+		width: 49%//+
+		+box//+
 		float: none
+	+r(470)
+		width: 100%
 	.pentagon
 		height: 143px
 		+r(1270)
