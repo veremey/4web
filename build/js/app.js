@@ -6,6 +6,16 @@ $(document).ready( function() {
 	});
 
 
+	if($(document).width() < 768) {
+		$('.crumbs').click(function() {
+			$(this).children('li').toggleClass('show');
+		});
+
+		$('.crumbs li').click(function() {
+			$(this).addClass('is_active').siblings().removeClass('is_active');
+		});
+	};
+
 
 }); // ready
 
@@ -59,14 +69,3 @@ $(document).ready( function() {
 		autoplaySpeed: 6000,
 		dots: false,
 	});
-
-
-if($(document).width() < 767) {
-	$('.crumbs').click(function() {
-		$(this).children('li').toggleClass('show');
-	});
-
-	$('.crumbs li').click(function() {
-		$(this).addClass('is_active').siblings().removeClass('is_active');
-	});
-};
